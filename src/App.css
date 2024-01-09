@@ -1,0 +1,855 @@
+.App {
+    text-align: center;
+}
+
+.App-logo {
+    height: 40vmin;
+    pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .App-logo {
+        animation: App-logo-spin infinite 20s linear;
+    }
+}
+
+.App-header {
+    background-color: #282c34;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: rgb(3, 3, 3);
+}
+
+.App-link {
+    color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.mystyle {
+    width: 20%;
+    position: absolute;
+    bottom: 82px;
+    left: 50%;
+    transform:
+        translateX(-50%);
+    z-index: 1
+}
+
+.cardstyling {
+    .card {
+        width: 90%;
+    }
+
+    .card img {
+        width: 100%;
+        height: 250px;
+        /* Adjust the height as needed */
+        object-fit: cover;
+        /* Maintain image aspect ratio */
+    }
+
+    .card-body {
+        text-align: center;
+    }
+}
+
+.contact {
+    align-items: center;
+    text-align: center;
+    background-color: #f7dff1;
+    margin-right: 350px;
+    
+}
+
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+        'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+        sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+        monospace;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f7dff1;
+    /* Light blue background color */
+    color: #333;
+    /* Darker text color for better readability */
+}
+
+header {
+    background-color: #00BFFF;
+    /* Deep sky blue header */
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+}
+
+
+
+main {
+    max-width: 600px;
+    /* Reduced the max-width */
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f7dff1;
+    /* Light blue container background color */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.audio-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    /* Reduced the gap between items */
+}
+
+.audio-item {
+    display: flex;
+    align-items: center;
+    background-color: #F0F8FF;
+    /* Alice blue item background color */
+    padding: 8px;
+    /* Reduced the padding */
+    border-radius: 5px;
+}
+
+.audio-content {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.audio-thumbnail {
+    width: 100px;
+    /* Increased the width of the thumbnail */
+    max-height: 100px;
+    /* Increased the maximum height of the image */
+    overflow: hidden;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.audio-thumbnail img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.audio-info {
+    text-align: center;
+}
+
+audio {
+    width: 100%;
+    margin-top: 8px;
+    /* Reduced the margin-top */
+    height: 20px;
+    /* Reduced the height of the audio controls */
+}
+
+h2,
+p {
+    margin: 0;
+}
+
+/* Customize the appearance of audio controls */
+audio::-webkit-media-controls-panel {
+    background-color: #F0F8FF;
+    /* Alice blue audio controls background color */
+    color: #333;
+    /* Darker text color for better readability */
+    border-radius: 5px;
+}
+
+audio::-webkit-media-controls-play-button,
+audio::-webkit-media-controls-pause-button {
+    background-color: #00BFFF;
+    /* Deep sky blue play/pause button color */
+    border-radius: 50%;
+}
+
+/* Add this to your CSS file */
+.popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.popup-inner {
+    background: white;
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px;
+}
+
+.popup button {
+    margin-top: 10px;
+    padding: 8px 16px;
+    cursor: pointer;
+}
+
+
+
+
+.fullscreen-video {
+    background-image: url("");
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    /* Adjust as needed */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.youtube-container {
+    width: 100%;
+    height: 100vh;
+}
+
+/* Youtubepage.css */
+.ytbackground-image {
+    background-image: url('');
+    /* Replace with your image path */
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    /* Set the minimum height to cover the entire viewport */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-body {
+    background-color: rgb(51, 175, 175);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.gameboardbody {
+    background-color: rgb(21, 56, 66);
+    /* Your desired background color */
+    height: 100vh
+}
+
+/*
+  .App { 
+    height: 100vh; 
+    width: 100vw; 
+    font-family: cursive; 
+    background-color: rgb(21, 56, 66); 
+  } 
+  */
+
+/* CSS for GameBoard component */
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+
+    font-size: 2.5rem;
+    color: rgb(9, 9, 9);
+    margin-bottom: 0.5rem;
+
+}
+
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem 0.8rem;
+    font-family: cursive;
+    width: 200px;
+    width: 100%;
+    font-size: 1.2rem;
+    font-weight: bolder;
+    border-radius: 0.7rem;
+    border-style: none;
+    background-color: red;
+    color: white;
+    margin-top: 4px;
+    /* margin-left: 55%; */
+    margin-left: 0;
+}
+
+.button:hover {
+    border: 2px solid black;
+    cursor: pointer;
+}
+
+
+/*
+  .board { 
+    display: grid; 
+    margin: auto; 
+    margin-top: 3rem; 
+    grid-template-columns: repeat(4, 9rem); 
+    place-items: center; 
+    row-gap: 2rem; 
+  } 
+  */
+.board {
+    display: grid;
+    margin: auto;
+    margin-top: 3rem;
+    grid-template-columns: repeat(4, 10rem);
+    /* Increase card width */
+    place-items: center;
+    row-gap: 3rem;
+    /* Increase gap between rows */
+}
+
+.comments {
+    padding: 0.25rem 1rem;
+    background-color: white;
+    margin: auto;
+    margin-top: 40px;
+    text-align: center;
+    border-radius: 2rem;
+}
+
+
+.face {
+    height: 6rem;
+    width: 6rem;
+    transition: transform ease-in 0.25s;
+    position: absolute;
+}
+
+.back {
+    height: 6rem;
+    width: 6rem;
+    background-color: rgb(253, 218, 175);
+    color: rgb(61, 21, 21);
+    border: 1px solid black;
+    border-radius: 50%;
+}
+
+.item .face {
+    position: absolute;
+    transform: rotateY(90deg);
+    transition: all ease-in 0.25s;
+
+
+}
+
+.toggled .face {
+    transform: rotateY(0deg);
+    transition-delay: 0.25s;
+}
+
+.item .back {
+    transition: all ease-in 0.25s;
+    transition-delay: 0.25s;
+}
+
+.toggled .back {
+    transform: rotateY(90deg);
+    transition-delay: 0s;
+}
+
+
+
+.timer {
+    font-size: 1.2rem;
+    color: rgb(247, 247, 247);
+    margin-top: 0.5rem;
+}
+
+
+.popup-overlay {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.5);
+    /* semi-transparent overlay */
+    width: 700px;
+    height: 300px;
+    /* Adjust the width as needed */
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.popup-content {
+    background: #fff;
+    height: 100%;
+    /* Ensure the content takes full height */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* ChildRightsInfo.css */
+.page {
+    background-image: url(https://tse3.mm.bing.net/th?id=OIP.K6FRLX5-C3XEdpKWhD3oVgHaEK&pid=Api&P=0&h=180);
+    background-size: cover;
+    /* This ensures that the image covers the entire container */
+    background-repeat: no-repeat;
+    /* Prevents the image from repeating */
+    background-position: center;
+    padding: 20px;
+    color: black;
+    font-family: Arial, sans-serif;
+    height: 150vh;
+    font-size: 20px;
+}
+
+.quiz-button {
+    background-color: #d6dbea;
+    /* Use your desired color */
+    color: #000000;
+    padding: 15px 30px;
+    /* Increase padding for larger dimensions */
+    font-size: 18px;
+    /* Increase font size for better visibility */
+    border: none;
+    border-radius: 8px;
+    /* Increase border radius for rounded corners */
+    cursor: pointer;
+    text-decoration: none;
+    margin-top: 20px;
+    /* Adjust as needed */
+}
+
+.options-container {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    width: 100%
+        /* Add other styling as needed */
+}
+
+.quiz-option {
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+    padding: 15px;
+    font-size: 1.2rem;
+    background-color: #2e1797;
+    /* Set your desired background color */
+    color: #fff;
+    /* Set your desired text color */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    /*flex: 1;
+    margin: 10px;
+    */
+}
+
+.quiz-container.custom-background {
+    background-image: url(https://tse3.mm.bing.net/th?id=OIP.K6FRLX5-C3XEdpKWhD3oVgHaEK&pid=Api&P=0&h=180);
+    /*background-color: peachpuff !important;*/
+    background-size: cover;
+    /* This ensures that the image covers the entire container */
+    background-repeat: no-repeat;
+    /* Prevents the image from repeating */
+    background-position: center;
+    padding: 20px;
+    height: 150vh;
+
+    align-items: center;
+    
+}
+
+.quiz-option.correct-answer {
+    background-color: green;
+    color: white;
+}
+
+.quiz-option.wrong-answer {
+    background-color: red;
+    color: white;
+}
+
+.question-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.question-content {
+    display: flex;
+    width: 100%;
+}
+
+.quiz-image {
+    width: 40%;
+    /* Adjust the width as needed */
+    height: auto;
+    /* Maintain aspect ratio */
+    margin-left: 40%;
+    /* Adjust the margin as needed */
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@700&display=swap');
+
+.app9 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  background-color: black;
+}
+
+.score-board9 {
+  background-color: #bac007;
+  width: 100%;
+  font-size: 2em;
+  text-align: center;
+  padding: 10px;
+  box-shadow: 0px 3px 6px rgba(0,0,0,0.16);
+  border-radius: 10px;
+  margin: 10px;
+  margin-top: 50px;
+}
+
+/*  style for the game section */
+
+.game9 {
+  width: 500px; /* Set the width of the game container to 500px */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 20px;
+  box-shadow: 0px 3px 6px rgba(0,0,0,0.16);
+}
+
+.game9 img {
+  width: calc(12.5% - 10px); /* Adjust width to fit 8 candies per row */
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0px 3px 6px rgba(0,0,0,0.16);
+  transition: transform 0.3s ease-in-out;
+  margin: 5px; /* Increase margin to match width adjustment */
+}
+
+
+.game9 img:hover {
+  box-shadow: 0px 3px 6px gold;
+  transform: scale(1.1);
+}
+
+
+/* Set variables for colors */
+:root {
+  --primary-color: black ;
+  --secondary-color: yellow ;
+  --body-font: 'Roboto', sans-serif;
+}
+
+/* Style the body */
+  
+/* Style the header */
+.header9 {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  padding: 0.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position:relative;
+  width: 900px;
+  height: 65px;
+  top: 0;
+  left: 0;
+  margin-bottom:150px;
+
+}
+
+/* Style the logo */
+.logo9 img {
+  height: 30px;
+  border-radius: 50%;
+
+}
+
+/* Style the mute button */
+.icon9 {
+  background-color: transparent;
+  color: var(--primary-color);
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+  margin-left: auto;
+}
+.icon9 img {
+  height: 20px;
+  margin-right: 1rem;
+  padding: 1rem;
+  background-color: #fff;
+  border-radius: 50%;
+}
+
+/* Style the main content */
+.main-body9 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 130vh;
+  padding: 5rem 1rem;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+  font-family: var(--body-font);
+  background-color: var(--primary-color);
+}
+
+.content9 {
+  max-width: 800px;
+  text-align: center;
+}
+
+/* Style the banner */
+.banner9 {
+  font-size: 8rem;
+  color: var(--secondary-color);
+  margin-bottom: 1rem;
+  padding: 2rem;
+  font-family: 'Passion One', cursive;
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 10px yellow;
+  animation-name: shadow-pulse;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+
+@keyframes shadow-pulse {
+  0% {
+    box-shadow: 0 0 10px yellow;
+  }
+  50% {
+    box-shadow: 0 0 20px yellow;
+  }
+  100% {
+    box-shadow: 0 0 10px yellow;
+  }
+}
+
+
+/* Style the motto */
+.motto9 {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+  text-align: center;
+  color: var(--secondary-color);
+  text-shadow: 0 0 5px yellow;
+}
+
+/* Style the start game button */
+.start-game9 {
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+  font-size: 1.2rem;
+  padding: 0.8rem 1.5rem;
+  border-radius: 1rem;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  text-transform: uppercase;
+  margin: 10px;
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.start-game9:hover {
+  transform: scale(1.05);
+}
+
+/* Style the candy crush image */
+.candy-crush-image9 {
+  width: 400px;
+  margin: 2rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  border-radius: 4.5rem;
+}
+
+/* Style the footer */
+.footer9 {
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+.about9{
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.about9-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-align: center;
+  color: white;
+  background-color: black;
+  padding: 1rem;
+  margin: 100px;
+  margin-bottom: 2rem;
+}
+
+.about9-body {
+ 
+  font-size: 1.2rem;
+  line-height: 1.5;
+  color: black;
+  padding: 2rem;
+  background-color: white;
+  border-radius: 0.5rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  width: 50%;
+}
+
+
+
+.quiz-container {
+    display: flex;
+    background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTV93te2bR9Y45H56G9Wz4CzxyH7j42QSTD3w&usqp=CAU");
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+  }
+  
+  .question-section {
+    text-align: center;
+    
+  }
+  
+  .answer-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  
+  .button1 {
+    margin-top: 50px;
+    padding: 100px; /* Increase button size */
+    cursor: pointer;
+    width: 60px;
+    height: 60px;
+  }
+  
+  .correct-answer {
+    background-color: #4caf50; /* Green for correct answer */
+    color: #fff;
+  }
+  
+  .wrong-answer {
+    background-color: #f44336; /* Red for wrong answer */
+    color: #fff;
+  }
+  
+  .score-section-box {
+    background-color: #93f279;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    margin-top: 100px;
+    
+  }
+  
+  .score-section {
+    display: inline;
+  }
+ 
+.correct-answer-text {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+
+
+
+
+.homeContainer6 {
+  text-align: center;
+  padding: 20px;
+}
+
+.textStyle9 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.emojiContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.emojiWrapper {
+  margin: 10px;
+}
+
+.emojiStyle {
+  width: 100px;
+  height: 100px;
+  transition: transform 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.emojiStyle:hover {
+  transform: scale(1.1);
+}
