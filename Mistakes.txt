@@ -1,8 +1,0 @@
-about us- two small paragraphs only
-remove search from nav bar- Done
-fix contact us heading-Done
-comment out name and age fields
-Game-make the image clickable-Done
-get atleast one game working-Done
-candy crush making changes
-youtube video integrating into main project
